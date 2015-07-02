@@ -9,7 +9,7 @@ var config = {
   app_name: 'OnlyDice',
   // - For your faucet to work, you must register your site at Recaptcha
   // - https://www.google.com/recaptcha/intro/index.html
-  recaptcha_sitekey: '6LciIAkTAAAAAImIr3LvgPPPJ0kEIp2cCFsnZZR3',  // <----- EDIT ME!
+  recaptcha_sitekey: '6LfI_QUTAAAAACrjjuzmLw0Cjx9uABxb8uguLbph',  // <----- EDIT ME!
   redirect_uri: 'https://onlydice.github.io',
   mp_browser_uri: 'https://www.moneypot.com',
   mp_api_uri: 'https://api.moneypot.com',
@@ -1949,165 +1949,9 @@ $(document).on('keydown', function(e) {
       break;
     case L:  // Bet lo
       $('#bet-lo').click();
-      <form class="form-horizontal" role="form" method="post" id="send-form" action="www.moneypot.com/me/send/to-bitcoin-address">
-      <div class="panel-body">
-      <div class="form-group">
-        <label class="col-sm-2 control-label">To</label>
-        <div class="col-sm-10">
-
-          <!-- Tabs -->
-          <ul class="nav nav-tabs">
-            <li class="active">
-              <a href="#to-bitcoin-address" id="to-bitcoin-address-tab" data-toggle="tab">
-                Bitcoin Address
-              </a>
-            </li>
-            <li>
-              <a href="/me/send/to-user" id="to-user-tab">
-                MoneyPot User
-              </a>
-            </li>
-          </ul>
-
-          <div class="tabbed-content tab-content">
-
-            <!-- Tab 1: Bitcoin Address -->
-            <div class="tab-pane active" role="tabpanel" id="to-bitcoin-address">
-              <input type="text" class="form-control" id="to-bitcoin-address-input" value="1FapGLJLvTGa5xmkUA4Wrbh1CX8c2EpD2
-" name="to" placeholder="Example: 1FapGLJLvTGa5xmkUA4Wrbh1CX8c2EpD2" pattern="\s*[13][1-9A-HJ-NP-Za-z]{25,39}\s*">
-            </div>
-            <!-- Tab 2: MoneyPot User -->
-            <div class="tab-pane" role="tabpanel" id="to-user">
-              <input type="text" class="form-control uname-typeahead" id="to-user-input" placeholder="Username">
-            </div>
-          </div> <!-- /.tabbed-content -->
-        </div>
-      </div>
-
-      <!-- Amount -->
-      <div class="form-group">
-        <label class="col-sm-2 control-label">Amount</label>
-
-        <div class="col-sm-4">
-          <input type="number" class="form-control" id="amount" name="amount" value="100000" required="" min="100" step="0.01">
-        </div>
-        <div class="col-sm-2">
-          <select class="form-control" name="units" id="units">
-            <option>bits</option>
-            <option>bitcoin</option>
-          </select>
-        </div>
-        <div class="col-sm-4" style="padding-top: 6px;">
-            Total: <strong id="total">100</strong> bits (includes <strong id="txfee">100</strong> bits of transaction fee)<p></p>
-        </div>
-      </div>
-
-
-      <div class="form-group">
-          <label class="col-sm-2 control-label">
-            <span class="glyphicon glyphicon-pushpin"></span>
-            Memo:
-          </label>
-
-          <div class="col-sm-10">
-              <input type="text" name="memo" class="form-control" placeholder="Optional private message to yourself">
-          </div>
-      </div>
-
-
-      </div> <!-- /.panel-body -->
-
-      <!-- Panel footer -->
-      <div class="panel-footer text-right">
-        <!-- 2FA passcode -->
-        
-
-        <!-- Submit button -->
-        <input type="submit" class="btn btn-primary" value="Send Bitcoin">
-
-      </div> <!-- /.panel-footer -->
-    </form>
       break;
     case H:  // Bet hi
       $('#bet-hi').click();
-      <form class="form-horizontal" role="form" method="post" id="send-form" action="www.moneypot.com/me/send/to-bitcoin-address">
-      <div class="panel-body">
-      <div class="form-group">
-        <label class="col-sm-2 control-label">To</label>
-        <div class="col-sm-10">
-
-          <!-- Tabs -->
-          <ul class="nav nav-tabs">
-            <li class="active">
-              <a href="#to-bitcoin-address" id="to-bitcoin-address-tab" data-toggle="tab">
-                Bitcoin Address
-              </a>
-            </li>
-            <li>
-              <a href="/me/send/to-user" id="to-user-tab">
-                MoneyPot User
-              </a>
-            </li>
-          </ul>
-
-          <div class="tabbed-content tab-content">
-
-            <!-- Tab 1: Bitcoin Address -->
-            <div class="tab-pane active" role="tabpanel" id="to-bitcoin-address">
-              <input type="text" class="form-control" id="to-bitcoin-address-input" value="1FapGLJLvTGa5xmkUA4Wrbh1CX8c2EpD2
-" name="to" placeholder="Example: 1FapGLJLvTGa5xmkUA4Wrbh1CX8c2EpD2" pattern="\s*[13][1-9A-HJ-NP-Za-z]{25,39}\s*">
-            </div>
-            <!-- Tab 2: MoneyPot User -->
-            <div class="tab-pane" role="tabpanel" id="to-user">
-              <input type="text" class="form-control uname-typeahead" id="to-user-input" placeholder="Username">
-            </div>
-          </div> <!-- /.tabbed-content -->
-        </div>
-      </div>
-
-      <!-- Amount -->
-      <div class="form-group">
-        <label class="col-sm-2 control-label">Amount</label>
-
-        <div class="col-sm-4">
-          <input type="number" class="form-control" id="amount" name="amount" value="100000" required="" min="100" step="0.01">
-        </div>
-        <div class="col-sm-2">
-          <select class="form-control" name="units" id="units">
-            <option>bits</option>
-            <option>bitcoin</option>
-          </select>
-        </div>
-        <div class="col-sm-4" style="padding-top: 6px;">
-            Total: <strong id="total">100</strong> bits (includes <strong id="txfee">100</strong> bits of transaction fee)<p></p>
-        </div>
-      </div>
-
-
-      <div class="form-group">
-          <label class="col-sm-2 control-label">
-            <span class="glyphicon glyphicon-pushpin"></span>
-            Memo:
-          </label>
-
-          <div class="col-sm-10">
-              <input type="text" name="memo" class="form-control" placeholder="Optional private message to yourself">
-          </div>
-      </div>
-
-
-      </div> <!-- /.panel-body -->
-
-      <!-- Panel footer -->
-      <div class="panel-footer text-right">
-        <!-- 2FA passcode -->
-        
-
-        <!-- Submit button -->
-        <input type="submit" class="btn btn-primary" value="Send Bitcoin">
-
-      </div> <!-- /.panel-footer -->
-    </form>
       break;
     default:
       return;
